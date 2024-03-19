@@ -787,4 +787,38 @@ export const icons: IconDefinition[] = [
       hash: "78a101217707c9b1c4dcf2a821be75684e36307f",
     },
   },
+  {
+    id: "mds",
+    name: "Material Design symbols",
+    contents: [
+      {
+        files: path.resolve(
+          __dirname,
+          "../../../../node_modules/@material-symbols/svg-300/rounded/!(*-fill*).svg"
+        ),
+        formatter: (name) => `Mds${name}Round`,
+        processWithSVGO: false,
+      },
+      {
+        files: path.resolve(
+          __dirname,
+          "../../../../node_modules/@material-symbols/svg-300/sharp/!(*-fill*).svg"
+        ),
+        formatter: (name) => `Mds${name}Sharp`,
+        processWithSVGO: false,
+      },
+      {
+        files: path.resolve(
+          __dirname,
+          "../../../../node_modules/@material-symbols/svg-300/outlined/!(*-fill*).svg"
+        ),
+        formatter: (name) => `Mds${name}Outlined`,
+        processWithSVGO: false,
+      },
+    ],
+    projectUrl: "https://developers.google.com/fonts/docs/material_icons",
+    license: "Apache License Version 2.0",
+    licenseUrl:
+      "https://github.com/google/material-design-icons/blob/master/LICENSE",
+  },
 ];

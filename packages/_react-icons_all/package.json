@@ -29,6 +29,12 @@
       "import": "./index.mjs",
       "default": "./index.mjs"
     },
+    "./mds":{
+      "types": "./mds/index.d.ts",
+      "require": "./mds/index.js",
+      "import": "./mds/index.mjs",
+      "default": "./mds/index.mjs"
+    },
     "./lib": {
       "types": "./lib/index.d.ts",
       "require": "./lib/index.js",
