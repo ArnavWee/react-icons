@@ -20,7 +20,7 @@ jobs:
       - name: corepack
         run: corepack enable
       - name: Install dependencies
-        run: yarn --immutable
+        run: yarn install --no-immutable
       - name: Formatter
         run: yarn format:ci
       - name: Lint
